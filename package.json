@@ -1,7 +1,7 @@
 {
   "name": "pixasearch",
   "version": "1.0.1",
-  "description": "An Electron, React, and Redux boilerplate for minimalists.",
+  "description": "Search stock images",
   "author": "Matheus Ricci <matricci2011@hotmail.com>",
   "license": "MIT",
   "main": "main.js",
@@ -15,13 +15,11 @@
     "dist:windows": "electron-builder --windows",
     "dist:linux": "electron-builder --linux"
   },
-  "repository": "https://github.com/f-prime/electron-react-boilerplate-minimal",
+  "repository": "https://github.com/matricci/pixasearch",
   "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "electronjs",
+    "reactjs",
+    "redux"
   ],
   "devDependencies": {
     "@babel/cli": "^7.2.3",
