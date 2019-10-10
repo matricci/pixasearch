@@ -1,0 +1,2 @@
+export const SEARCH_IMAGES = "SEARCH_IMAGES"
+export const SEARCH_TEXT = "SEARCH_TEXT"
