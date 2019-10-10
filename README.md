@@ -1,23 +1,7 @@
-# electron-react-boilerplate-minimal
+# PixaSearch 
 
-An Electron, React (16.8) boilerplate for minimalists. Comes with Webpack, Babel, Electron, reactn and an example app using React Hooks.
+An App built with Electron, React and Redux to search stock images using the pixabayAPI
 
-Uses [electron-quick-start](https://github.com/electron/electron-quick-start) for Electron base. 
+## IMPORTANT 
 
-Comes with a basic counting app
-
-![](image.png)
-
-# How to run
-
-3 simple commands.
-
-`npm install`
-
-`yarn dev`
-
-`yarn start`
-
-# Building for Production
-
-`yarn build`
+Your need an api key to use this app, you can get one on the [API documentation](https://pixabay.com/api/docs/) 
