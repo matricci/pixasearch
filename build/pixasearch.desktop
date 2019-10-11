@@ -1,0 +1,6 @@
+	[Desktop Entry]
+	Name=PixaSearch
+	Exec=pixasearch
+	Icon=pixasearch.png
+	Type=Application
+	Categories=GTK;Utility;
