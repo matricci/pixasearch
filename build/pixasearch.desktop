@@ -1,6 +1,7 @@
+#!/usr/bin/env xdg-open
 	[Desktop Entry]
 	Name=PixaSearch
 	Exec=pixasearch
-	Icon=pixasearch.png
+	Icon=pixasearch
 	Type=Application
 	Categories=GTK;Utility;
