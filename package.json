@@ -60,6 +60,7 @@
     "linux": {
       "category": "Utility",
       "icon": "icon.png",
+      "desktop" : "pixasearch.desktop",
       "target": [
         "deb"
       ]
