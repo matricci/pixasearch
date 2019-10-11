@@ -65,7 +65,10 @@
       ]
     },
     "win": {
-      "target": "squirrel",
+      "target": [
+        "portable",
+        "msi"
+      ],
       "icon": "build/icon.ico"
     }
   }
