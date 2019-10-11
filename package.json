@@ -59,7 +59,7 @@
   "build": {
     "linux": {
       "category": "Utility",
-      "icon": "icon.png",
+      "icon": "icon.svg",
       "desktop" : "pixasearch.desktop",
       "target": [
         "deb"
