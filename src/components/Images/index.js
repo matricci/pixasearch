@@ -18,6 +18,12 @@ function download(dataurl, filename) {
 
 
 export default function Images() {
+    const scrollTop = event => {
+        const anchor = (event.target.ownerDocument || document).querySelector('#top');
+        if (anchor) {
+            anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    };
     const images = useSelector(state => state.search.images.hits)
     const totalItems = useSelector(state => state.search.images.totalHits)
     const [offset, setOffset] = useState(0)
@@ -79,7 +85,10 @@ export default function Images() {
                             <Pagination
                                 offset={offset}
                                 total={Math.round(totalItems / 20)}
-                                onClick={(e, o) => setOffset(o)}
+                                onClick={(e, o) => {
+                                    setOffset(o)
+                                    scrollTop(e)
+                                }}
                             />
                         </Grid>
                     </Fragment>

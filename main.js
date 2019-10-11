@@ -1,13 +1,13 @@
-const { app, BrowserWindow, shell, clipboard } = require('electron')
+const { app, BrowserWindow, shell, clipboard, Notification } = require('electron')
 const { ipcMain } = require('electron')
 var path = require('path')
-var fs = require('fs')
+
 
 let mainWindow
 
 function createWindow() {
 
-
+  
   mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
@@ -25,6 +25,10 @@ function createWindow() {
 
   ipcMain.on('store-key', (event) => {
     mainWindow.reload()
+  })
+
+  ipcMain.on('copy-text', async (event, text) => {
+    clipboard.writeText(text) 
   })
 
 
@@ -49,9 +53,5 @@ ipcMain.on('open-browser', (event, url) => {
   shell.openExternal(url)
 })
 
-
-ipcMain.on('copy-text', (event, text) => {
-  clipboard.writeText(text)
-})
 
 

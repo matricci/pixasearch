@@ -4,7 +4,7 @@ import Search from './components/Layout/Search'
 import { ThemeProvider } from '@material-ui/styles'
 import { createMuiTheme } from '@material-ui/core/styles'
 import { lightGreen } from '@material-ui/core/colors'
-import { Container, Grid, Typography } from '@material-ui/core'
+import { Container, Grid } from '@material-ui/core'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import AppBar from './components/Layout/AppBar'
 import { Provider } from 'react-redux'
@@ -30,7 +30,7 @@ function App() {
             <CssBaseline />
             <ThemeProvider theme={muitheme}>
                 <Search />
-                <div style={{ marginTop: "64px" }} />
+                <div style={{ marginTop: "64px" }}  id="top" />
                 <Container>
                     <Grid container spacing={3}>
                         <Images />
