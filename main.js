@@ -1,14 +1,13 @@
-const {app, BrowserWindow, shell, clipboard, remote} = require('electron')
+const { app, BrowserWindow, shell, clipboard } = require('electron')
 const { ipcMain } = require('electron')
 var path = require('path')
 var fs = require('fs')
 
-write_file = function(file, output){
-  fs.writeFileSync(file, output);
-}
 let mainWindow
 
-function createWindow () {
+function createWindow() {
+
+
   mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
@@ -27,7 +26,7 @@ function createWindow () {
   ipcMain.on('store-key', (event) => {
     mainWindow.reload()
   })
-  
+
 
 }
 
@@ -46,7 +45,7 @@ app.on('activate', function () {
 })
 
 ipcMain.on('open-browser', (event, url) => {
-  console.log(url) 
+  console.log(url)
   shell.openExternal(url)
 })
 
