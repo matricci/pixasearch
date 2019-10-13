@@ -61,16 +61,22 @@ const useStyles = makeStyles(theme => ({
 }))
 
 export default function Search() {
+    const scrollTop = event => {
+        const anchor = (event.target.ownerDocument || document).querySelector('#top');
+        if (anchor) {
+            anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    };
     const [text, setText] = useState('')
     const dispatch = useDispatch()
     const classes = useStyles()
     return (
         <AppBar>
             <Paper style={{ display: 'inline-flex', width: '100%',  position: 'fixed', borderRadius: 50}}>
-                <IconButton onClick={() => {
+                <IconButton onClick={e => {
                     dispatch(searchImages(text.split(' ').join('+')))
                     dispatch(searchText(text.split(' ').join('+')))
-                    
+                    scrollTop(e)
                     }}>
                     <SearchIcon />
                 </IconButton>
@@ -82,11 +88,11 @@ export default function Search() {
                     setText(e.target.value)
                     }} value={text}/>
             {text ? (
-                <IconButton onClick={() => {
+                <IconButton onClick={e => {
                     setText('')
                     dispatch(searchImages(''))  
                     dispatch(searchText(''))
-
+                    scrollTop(e)
                 }}>
                     <Close />
                 </IconButton>
