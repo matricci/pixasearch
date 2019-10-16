@@ -8,8 +8,7 @@
   "scripts": {
     "react-start": "react-scripts start",
     "dev": "webpack --watch",
-    "electron-dev": "concurrently \"BROWSER=none npm run react-start\" \"wait-on http://localhost:3000 && electron .\"",
-    "start": "electron .",
+    "start": " npm run dev & electron .",
     "build": "webpack && electron-builder",
     "dist": "electron-builder",
     "dist:all": "npm-run-all -p dist:*",
