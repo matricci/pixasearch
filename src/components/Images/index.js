@@ -27,6 +27,7 @@ export default function Images() {
     const images = useSelector(state => state.search.images.hits)
     const totalItems = useSelector(state => state.search.images.totalHits)
     const [offset, setOffset] = useState(0)
+    const [page, setPage] = useState(1)
     const dispatch = useDispatch()
     const query = useSelector(state => state.search.query)
 
@@ -35,8 +36,8 @@ export default function Images() {
         console.log(totalItems)
     }, [images])
     useEffect(() => {
-        dispatch(searchImages(query, offset + 1))
-    }, [offset])
+        dispatch(searchImages(query, page))
+    }, [page])
     useEffect(() => {
         setOffset(0)
     }, [query])
@@ -84,16 +85,19 @@ export default function Images() {
 
                             <Pagination
                                 offset={offset}
-                                total={Math.round(totalItems / 20)}
-                                onClick={(e, o) => {
+                                limit={20}
+                                total={totalItems}
+                                onClick={(e, o, p) => {
                                     setOffset(o)
                                     scrollTop(e)
+                                    setPage(p)
+                                    console.log(e, o, p)
                                 }}
                             />
                         </Grid>
                     </Fragment>
                 )}
-            
+
         </Fragment>
     )
 }
