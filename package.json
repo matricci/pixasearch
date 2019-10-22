@@ -63,7 +63,8 @@
       "icon": "icon.svg",
       "desktop": "pixasearch.desktop",
       "target": [
-        "deb"
+        "deb",
+        "AppImage"
       ]
     },
     "win": {
