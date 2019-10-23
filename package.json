@@ -58,6 +58,11 @@
     "yarn": "^1.13.0"
   },
   "build": {
+    "appId": "com.matheusricci.pixasearch",
+    "productName": "Pixasearch",
+    "mac":{
+      "category": "public.app-category.developer-tools"
+    },
     "linux": {
       "category": "Utility",
       "icon": "icon.svg",
