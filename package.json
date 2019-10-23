@@ -44,7 +44,6 @@
     "axios": "^0.19.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.6",
-    "fs": "0.0.1-security",
     "material-ui-flat-pagination": "^4.0.0",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
@@ -54,13 +53,12 @@
     "redux": "^4.0.4",
     "redux-devtools-extension": "^2.13.8",
     "redux-thunk": "^2.3.0",
-    "remote": "^0.2.6",
-    "yarn": "^1.13.0"
+    "remote": "^0.2.6"
   },
   "build": {
     "appId": "com.matheusricci.pixasearch",
     "productName": "Pixasearch",
-    "mac":{
+    "mac": {
       "category": "public.app-category.developer-tools"
     },
     "linux": {
