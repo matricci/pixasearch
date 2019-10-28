@@ -30,7 +30,7 @@
     "babel": "^6.23.0",
     "css-loader": "^2.1.0",
     "electron": "^6.0.12",
-    "electron-builder": "^20.44.4",
+    "electron-builder": "^21.2.0",
     "react-hot-loader": "^4.7.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.41.1",
@@ -58,7 +58,8 @@
     "appId": "com.matheusricci.pixasearch",
     "productName": "Pixasearch",
     "mac": {
-      "category": "public.app-category.developer-tools"
+      "category": "public.app-category.developer-tools",
+      "darkModeSupport": true
     },
     "linux": {
       "category": "Utility",
