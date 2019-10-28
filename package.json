@@ -59,7 +59,8 @@
     "productName": "Pixasearch",
     "mac": {
       "category": "public.app-category.developer-tools",
-      "darkModeSupport": true
+      "darkModeSupport": true,
+      "target": ["dmg"]
     },
     "linux": {
       "category": "Utility",
