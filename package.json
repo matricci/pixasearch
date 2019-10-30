@@ -48,11 +48,9 @@
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-redux": "^7.1.1",
-    "react-router-dom": "^4.3.1",
     "reactn": "^1.0.0",
     "redux": "^4.0.4",
-    "redux-thunk": "^2.3.0",
-    "remote": "^0.2.6"
+    "redux-thunk": "^2.3.0"
   },
   "build": {
     "appId": "com.matheusricci.pixasearch",
@@ -60,7 +58,9 @@
     "mac": {
       "category": "public.app-category.developer-tools",
       "darkModeSupport": true,
-      "target": ["dmg"]
+      "target": [
+        "dmg"
+      ]
     },
     "linux": {
       "category": "Utility",
