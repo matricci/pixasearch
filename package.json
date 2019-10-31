@@ -68,7 +68,9 @@
       "desktop": "pixasearch.desktop",
       "target": [
         "deb",
-        "AppImage"
+        "AppImage",
+	"rpm",
+	"pacman"
       ]
     },
     "win": {
