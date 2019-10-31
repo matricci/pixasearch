@@ -13,6 +13,7 @@ function createWindow() {
     },
     icon: path.join(__dirname, "assets/icon.png")
   });
+  mainWindow.removeMenu();
 
   mainWindow.loadFile("index.html");
 
