@@ -67,10 +67,10 @@
       "icon": "icon.svg",
       "desktop": "pixasearch.desktop",
       "target": [
-        "deb",
         "AppImage",
-	"rpm",
-	"pacman"
+        "deb",
+        "rpm",
+        "pacman"
       ]
     },
     "win": {
