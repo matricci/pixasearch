@@ -7,5 +7,9 @@ An App built with Electron, React and Redux to search stock images using the pix
 Your need an api key to use this app, you can get one on the [API documentation](https://pixabay.com/api/docs/) 
 
 
+[Download](https://github.com/matricci/pixasearch/releases) link
 
-[Download](https://github.com/matricci/pixasearch/releases)
+
+## Screenshot
+
+![screenshot](screenshot.png)
