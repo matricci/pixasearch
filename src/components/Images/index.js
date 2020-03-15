@@ -84,6 +84,7 @@ export default function Images() {
                         <Grid item xs={12} >
 
                             <Pagination
+                                style={{textAlignLast: "center"}}
                                 offset={offset}
                                 limit={20}
                                 total={totalItems}
