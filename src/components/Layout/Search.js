@@ -114,6 +114,14 @@ export default function Search() {
             setText(e.target.value);
           }}
           value={text}
+          autoFocus={true}
+          onKeyPress={event => {
+            if (event.key === "Enter") {
+              dispatch(searchImages(text.split(" ").join("+")));
+              dispatch(searchText(text.split(" ").join("+")));
+              scrollTop(event);
+            }
+          }}
         />
         {text ? (
           <IconButton
