@@ -48,7 +48,7 @@
     "react-dom": "^16.13.0",
     "react": "^16.13.1",
     "react-redux": "^7.2.1",
-    "reactn": "^1.0.0",
+    "reactn": "^2.2.7",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
     "serialize-javascript": "^4.0.0",
