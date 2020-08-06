@@ -10,6 +10,8 @@ import {
   CardActions,
   IconButton,
   Link,
+  Dialog,
+  DialogContent,
 } from "@material-ui/core";
 import { useSelector, useDispatch } from "react-redux";
 import { FileCopyOutlined, SaveAlt, Public } from "@material-ui/icons";
@@ -40,6 +42,8 @@ export default function Images() {
   const totalItems = useSelector((state) => state.search.images.totalHits);
   const [offset, setOffset] = useState(0);
   const [page, setPage] = useState(1);
+  const [open, setOpen] = useState(false);
+  const [fSizeImg, setFSizeImg] = useState("");
   const dispatch = useDispatch();
   const query = useSelector((state) => state.search.query);
 
@@ -90,6 +94,10 @@ export default function Images() {
                 <CardMedia
                   image={image.webformatURL}
                   style={{ paddingTop: "56%" }}
+                  onClick={() => {
+                    setOpen(true);
+                    setFSizeImg(image.largeImageURL);
+                  }}
                 />
                 <CardContent>
                   <Typography variant="caption">{image.tags}</Typography>
@@ -134,6 +142,11 @@ export default function Images() {
           </Grid>
         </Fragment>
       )}
+      <Dialog open={open} onClose={() => setOpen(false)}>
+        <DialogContent>
+          <img src={fSizeImg} style={{ width: "100%" }} />
+        </DialogContent>
+      </Dialog>
     </Fragment>
   );
 }
