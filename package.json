@@ -71,8 +71,7 @@
       "target": [
         "AppImage",
         "deb",
-        "rpm",
-        "pacman"
+        "rpm"
       ]
     },
     "win": {
