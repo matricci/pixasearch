@@ -25,5 +25,9 @@ jobs:
     - run: npm run build
     - name: Download all workflow run artifacts
       uses: actions/upload-artifact@v2
-
+      with:
+        path: dist
+      
+        
+      
       
