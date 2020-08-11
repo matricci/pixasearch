@@ -23,4 +23,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm i 
     - run: npm run build
+    - name: Download all workflow run artifacts
+    - uses: actions/upload-artifact@v2
+
       
