@@ -9,7 +9,7 @@
     "react-start": "react-scripts start",
     "dev": "webpack --watch",
     "start": " npm run dev & electron .",
-    "build": "webpack && electron-builder",
+    "build": "webpack && electron-builder --publish=never",
     "dist": "electron-builder",
     "dist:all": "npm-run-all -p dist:*",
     "dist:mac": "electron-builder --mac",
