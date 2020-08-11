@@ -24,6 +24,6 @@ jobs:
     - run: npm i 
     - run: npm run build
     - name: Download all workflow run artifacts
-    - uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v2
 
       
