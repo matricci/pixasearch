@@ -5,8 +5,7 @@ name: Build on Release
 
 on:
   release:
-    types: [published]
-    
+    types: [published]    
 jobs:
   build:
 
@@ -23,13 +22,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm i 
+    - run: npm i
     - run: npm run build
     - name: Download all workflow run artifacts
       uses: actions/upload-artifact@v2
       with:
         path: dist
-      
-        
-      
-      
