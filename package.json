@@ -51,7 +51,7 @@
     "reactn": "^2.2.7",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
-    "serialize-javascript": "^4.0.0",
+    "serialize-javascript": "^5.0.1",
     "minimist": ">=1.2.2"
   },
   "build": {
