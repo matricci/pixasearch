@@ -26,7 +26,7 @@
     "@babel/core": "^7.11.1",
     "@babel/cli": "^7.10.5",
     "@babel/preset-react": "^7.10.4",
-    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-env": "^7.13.12",
     "babel": "^6.23.0",
     "electron": "^9.2.0",
     "css-loader": "^4.2.1",
