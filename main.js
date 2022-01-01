@@ -1,5 +1,6 @@
 const { app, BrowserWindow, shell, clipboard } = require("electron");
 const { ipcMain } = require("electron");
+const open = require("open")
 var path = require("path");
 
 let mainWindow;
@@ -10,7 +11,8 @@ function createWindow() {
     height: 600,
     webPreferences: {
       nodeIntegration: true,
-      devTools: false
+      contextIsolation: false,
+      devTools: true
     },
     icon: path.join(__dirname, "assets/icon.png")
   });
@@ -18,7 +20,7 @@ function createWindow() {
 
   mainWindow.loadFile("index.html");
 
-  mainWindow.on("closed", function() {
+  mainWindow.on("closed", function () {
     mainWindow = null;
   });
 
@@ -33,13 +35,13 @@ function createWindow() {
 
 app.on("ready", createWindow);
 
-app.on("window-all-closed", function() {
+app.on("window-all-closed", function () {
   if (process.platform !== "darwin") {
     app.quit();
   }
 });
 
-app.on("activate", function() {
+app.on("activate", function () {
   if (mainWindow === null) {
     createWindow();
   }
@@ -47,5 +49,5 @@ app.on("activate", function() {
 
 ipcMain.on("open-browser", (event, url) => {
   console.log(url);
-  shell.openExternal(url);
+  open(url, {});
 });
