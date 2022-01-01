@@ -17,7 +17,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { FileCopyOutlined, SaveAlt, Public } from "@material-ui/icons";
 import Pagination from "material-ui-flat-pagination";
 import { searchImages } from "../../actions/search";
-const electron = window.require("electron");
+const electron = require('electron')
 const ipcRenderer = electron.ipcRenderer;
 
 function download(dataurl, filename) {
