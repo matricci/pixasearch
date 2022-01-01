@@ -18,11 +18,11 @@ module.exports = {
       }
     ]
   },
-  resolve: { 
-      extensions: ["*", ".js", ".jsx"], 
-      alias:{
-        'react-dom': '@hot-loader/react-dom' 
-      }
+  resolve: {
+    extensions: ["*", ".js", ".jsx"],
+    alias: {
+      'react-dom': '@hot-loader/react-dom'
+    }
   },
   output: {
     path: path.join(__dirname, "/dist/"),
@@ -35,5 +35,11 @@ module.exports = {
     publicPath: "http://localhost:3000/dist/",
     hotOnly: true
   },
-  plugins: [new webpack.HotModuleReplacementPlugin()]
+  target: "node",
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.ExternalsPlugin('commonjs', [
+      'electron'
+    ])
+  ]
 };
