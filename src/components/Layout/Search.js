@@ -19,6 +19,8 @@ import { Search as SearchIcon, Close, Settings } from "@material-ui/icons";
 import { searchImages, searchText } from "../../actions/search";
 import { useDispatch } from "react-redux";
 
+
+//TODO: Styling - Add opacity and blur to background of the paper
 const useStyles = makeStyles((theme) => ({
   divider: {
     height: "auto",

@@ -16,6 +16,7 @@ const key = localStorage.getItem('key')
 const primary = lightGreen[200]
 
 function App() {
+    //TODO: Move to Mui@v5
     const muitheme = createMuiTheme({
         palette: {
             type: 'dark',
@@ -30,15 +31,15 @@ function App() {
             <CssBaseline />
             <ThemeProvider theme={muitheme}>
                 <Search />
-                <div style={{ marginTop: "64px" }}  id="top" />
+                <div style={{ marginTop: "64px" }} id="top" />
                 <Container>
                     <Grid container spacing={3}>
                         <Images />
                         {key ? (
                             <Fragment />
                         ) : (
-                                <Getkey />
-                            )}
+                            <Getkey />
+                        )}
                     </Grid>
                 </Container>
                 <AppBar />
