@@ -23,13 +23,13 @@
     "redux"
   ],
   "devDependencies": {
-    "@babel/core": "^7.16.0",
     "@babel/cli": "^7.10.5",
-    "@babel/preset-react": "^7.16.5",
+    "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.5",
+    "@babel/preset-react": "^7.16.5",
     "babel": "^6.23.0",
-    "electron": "^16.0.5",
     "css-loader": "^4.2.1",
+    "electron": "^16.0.5",
     "electron-builder": "^22.8.0",
     "react-hot-loader": "^4.13.0",
     "style-loader": "^2.0.0",
@@ -45,14 +45,15 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^8.2.3",
     "material-ui-flat-pagination": "^4.1.2",
-    "react-dom": "^16.14.0",
+    "minimist": ">=1.2.2",
+    "open": "^8.4.0",
     "react": "^16.13.1",
+    "react-dom": "^16.14.0",
     "react-redux": "^7.2.6",
     "reactn": "^2.2.7",
     "redux": "^4.1.2",
     "redux-thunk": "^2.3.0",
-    "serialize-javascript": "^6.0.0",
-    "minimist": ">=1.2.2"
+    "serialize-javascript": "^6.0.0"
   },
   "build": {
     "appId": "com.matheusricci.pixasearch",
