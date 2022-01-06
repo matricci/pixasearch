@@ -8,7 +8,7 @@
   "scripts": {
     "react-start": "react-scripts start",
     "dev": "webpack --watch",
-    "start": " yarn run dev & electron .",
+    "start": " npm run dev & electron .",
     "build": "webpack && electron-builder --publish=never",
     "dist": "electron-builder",
     "dist:all": "npm-run-all -p dist:*",
