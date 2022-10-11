@@ -45,7 +45,7 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^8.2.3",
     "material-ui-flat-pagination": "^4.1.2",
-    "minimist": ">=1.2.2",
+    "minimist": ">=1.2.7",
     "open": "^8.4.0",
     "react": "^16.13.1",
     "react-dom": "^16.14.0",
