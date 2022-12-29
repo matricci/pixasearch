@@ -41,7 +41,7 @@
     "@hot-loader/react-dom": "^16.14.0",
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
-    "axios": "^0.24.0",
+    "axios": "^1.2.2",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.2.3",
     "material-ui-flat-pagination": "^4.1.2",
